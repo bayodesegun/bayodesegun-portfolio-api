@@ -3,10 +3,12 @@ version: '3'
 services:
   db:
     image: postgres
+    hostname: db
     volumes:
       - ./database:/var/lib/postgresql/data
   web:
     build: .
+    hostname: web
     command: ./start.sh
     volumes:
       - .:/code
