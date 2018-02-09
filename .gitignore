@@ -1,0 +1,6 @@
+*.sqlite*
+*.zip
+*.pyc
+*.ini
+static/
+database/
